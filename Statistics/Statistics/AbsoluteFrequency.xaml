@@ -12,22 +12,42 @@
     <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,Auto">
         <Label  Grid.Column="0"  
                 Grid.Row="0"
-                Padding="20,0,0,0"
+                Padding="25,0,0,0"
                 Text="Абсолютна честота"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="20"
-                HorizontalOptions="Center"/>
-        <ListView HorizontalOptions="Center" Grid.Row="1" Grid.Column="0"  ItemsSource="{Binding AbsoluteFrequencies}" SelectionMode="None">
+                HorizontalOptions="Start"/>
+        <ListView HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20" ItemsSource="{Binding AbsoluteFrequencies}" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding Key}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView HorizontalOptions="Center" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding AbsoluteFrequencies}" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding Value}"/>
+                    <ViewCell FlexLayout.AlignSelf="Center">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto">
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   Text="Брой Редактирани уикита"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15"
+                                    HorizontalOptions="Center"
+                                   Text="{Binding Key}"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   Text="Брой студенти"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   Margin="15"
+                                   HorizontalOptions="Center"
+                                   Text="{Binding Value}" />
+                        </Grid>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

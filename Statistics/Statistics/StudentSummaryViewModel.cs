@@ -8,9 +8,9 @@
 
         public int Files { get; set; }
 
-        public double Score { get; set; }
+        public string Score { get; set; }
 
-        public StudentSummaryViewModel(int studentId, int wikis, int files, double score)
+        public StudentSummaryViewModel(int studentId, int wikis, int files, string score)
         {
             this.StudentId = studentId;
             this.Wikis = wikis;
@@ -20,7 +20,7 @@
 
         public override string ToString()
         {
-            return "Потребител: " + StudentId + ", Редактирани Уикита: " + Wikis + ", Прочетени файлове: " + Files + ", Резултат: " + Score;
+            return "Потребител: " + StudentId + ", Редактирани Уикита: " + Wikis + ", Прочетени файлове: " + Files + ", Oценка: " + Score;
         }
     }
 }

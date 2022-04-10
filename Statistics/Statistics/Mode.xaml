@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Statistics.Mode"
              xmlns:local="clr-namespace:Statistics"
-             Title="Линейна корелация"
+             Title="Мода"
              BackgroundColor="White"
              >
     <ContentPage.BindingContext>

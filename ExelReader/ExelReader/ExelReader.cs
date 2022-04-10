@@ -17,6 +17,7 @@ namespace ExelReader
         public ExelReader()
         {
             sheets = new List<SheetData>();
+            table = new SharedStringTable();
             updatedWikis = new List<string>();
             uploadedFiles = new List<string>();
             scores = new Dictionary<int, double>();

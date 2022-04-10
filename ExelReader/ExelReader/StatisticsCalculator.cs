@@ -59,7 +59,7 @@ namespace ExelReader
             return average;
         }
 
-        public static ObservableCollection<double> GetMode(List<int> numbers)
+        public static List<double> GetMode(List<int> numbers)
         {
             long mode = 0;
             long max = 0;
@@ -106,7 +106,7 @@ namespace ExelReader
                 result = new List<double>() { average };
             }
 
-            return new ObservableCollection<double>(result);
+            return result;
         }
 
         private static bool AreNeighbours(List<double> result, List<int> numbers)

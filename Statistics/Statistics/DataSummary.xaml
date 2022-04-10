@@ -8,66 +8,69 @@
     <ContentPage.BindingContext>
         <local:StatisticsViewModel/>
     </ContentPage.BindingContext>
-    <Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto">
+    <Grid RowDefinitions="Auto,Autо" ColumnDefinitions="Auto,Auto">
         <Label  Grid.Column="0"  
                 Grid.Row="0"
-                Padding="20,0,0,0"
+                Padding="0,0,20,0"
                 Text="Обобщение"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="20"
                 HorizontalOptions="Center"/>
-        <Label 
-            Grid.Column="0"
-            Grid.Row="1"
-            Text="Потребител"
-            FontSize="15"
-            HorizontalOptions="Center"/>
-        <Label 
-            Grid.Column="1"
-            Grid.Row="1"
-            Text="Редактирани Уикита"
-            FontSize="15"
-            Margin="3"
-            HorizontalOptions="Center"/>
-        <Label 
-            Grid.Column="2"
-            Grid.Row="1"
-            Text="Прoчетени Файлове"
-            FontSize="15"
-            Margin="3"
-            HorizontalOptions="Center"/>
-        <Label 
-            Grid.Column="3"
-            Grid.Row="1"
-            Text="Резултат"
-            FontSize="15"
-            Margin="3"
-            HorizontalOptions="Center"/>
-        <ListView HorizontalOptions="Center" Grid.Row="2" Grid.Column="0"  ItemsSource="{Binding StudentsSummary}" SelectionMode="None">
+        <ListView HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="20" ItemsSource="{Binding StudentsSummary}" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding StudentId}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView HorizontalOptions="End" Grid.Row="2" Grid.Column="1" Margin="3" ItemsSource="{Binding StudentsSummary}" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding Wikis}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView HorizontalOptions="End" Grid.Row="2" Grid.Column="2" Margin="3" ItemsSource="{Binding StudentsSummary}" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell  TextColor="Black" Text="{Binding Files}"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <ListView HorizontalOptions="End" Grid.Row="2" Grid.Column="3" Margin="3" ItemsSource="{Binding StudentsSummary}" SelectionMode="None">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell TextColor="Black" Text="{Binding Score}"/>
+                    <ViewCell FlexLayout.AlignSelf="Center">
+                        <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto">
+                            <Label Grid.Column="0"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   Text="Студент"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15"
+                                    HorizontalOptions="Center"
+                                   Text="{Binding StudentId}"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   Text="Редактирани уикита"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="1"
+                                   Grid.Row="1"
+                                   Margin="15"
+                                   HorizontalOptions="Center"
+                                   Text="{Binding Wikis}" />
+                            <Label Grid.Column="2"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   Text="Качени файлове"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Margin="15"
+                                   HorizontalOptions="Center"
+                                   Text="{Binding Files}" />
+                            <Label Grid.Column="3"
+                                   Grid.Row="0"
+                                   FontSize="12"
+                                   Margin="10"
+                                   Text="Оценка"
+                                   SemanticProperties.HeadingLevel="Level2"
+                                   HorizontalOptions="Center"/>
+                            <Label Grid.Column="3"
+                                   Grid.Row="1"
+                                   Margin="15"
+                                   HorizontalOptions="Center"
+                                   Text="{Binding Score}" />
+                        </Grid>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

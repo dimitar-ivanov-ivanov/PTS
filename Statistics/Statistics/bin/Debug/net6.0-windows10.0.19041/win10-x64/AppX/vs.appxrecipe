@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-10T02:25:03.915</Modified>
+      <Modified>2022-04-10T16:42:01.936</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-10T02:05:31.735</Modified>
+      <Modified>2022-04-10T16:40:56.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.runtimeconfig.json">
       <PackagePath>Statistics.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.dll">
       <PackagePath>Statistics.dll</PackagePath>
-      <Modified>2022-04-10T02:25:01.321</Modified>
+      <Modified>2022-04-10T16:41:58.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\apphost.exe">
       <PackagePath>Statistics.exe</PackagePath>
-      <Modified>2022-04-10T02:25:01.419</Modified>
+      <Modified>2022-04-10T16:41:58.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.deps.json">
       <PackagePath>Statistics.deps.json</PackagePath>
@@ -1091,11 +1091,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReader\bin\Debug\net6.0\ExelReader.dll">
       <PackagePath>ExelReader.dll</PackagePath>
-      <Modified>2022-04-08T17:58:46.244</Modified>
+      <Modified>2022-04-10T15:58:13.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\Platforms\Windows\App.xbf">
       <PackagePath>Platforms\Windows\App.xbf</PackagePath>
-      <Modified>2022-04-10T02:05:19.662</Modified>
+      <Modified>2022-04-10T16:40:51.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

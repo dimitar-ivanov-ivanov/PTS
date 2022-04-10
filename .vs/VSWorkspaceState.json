@@ -3,11 +3,13 @@
     "",
     "\\ExelReader",
     "\\ExelReader\\DistractionTests",
+    "\\ExelReader\\DistractionTests\\bin",
+    "\\ExelReader\\ExelReader",
+    "\\ExelReader\\ExelReaderTests",
     "\\Statistics",
     "\\Statistics\\Statistics",
-    "\\Statistics\\Statistics\\bin",
-    "\\Statistics\\Statistics\\Resources"
+    "\\Statistics\\Statistics\\bin"
   ],
-  "SelectedNode": "\\Statistics\\Statistics.sln",
+  "SelectedNode": "\\ExelReader\\ExelReaderTests\\FrequencyCalculatorTest.cs",
   "PreviewInSolutionExplorer": false
 }
