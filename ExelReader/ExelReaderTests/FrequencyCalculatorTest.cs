@@ -63,6 +63,19 @@ namespace ExelReaderTests
         }
 
         [Test]
+        public void Given_EmptyList_Then_FrequencyCalculatorGetAbsoluteFrequency_Should_ReturnNoFrequency()
+        {
+            //Arrange
+            numbers = new List<int>() { };
+
+            //Act
+            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+
+            //Assert
+            Assert.AreEqual(0, absoluteFrequencies.Count);
+        }
+
+        [Test]
         public void Given_ListOfNumbers_Then_FrequencyCalculatorGetRelativeFrequency_Should_AllHaveSameFrequency()
         {
             //Arrange
@@ -109,6 +122,19 @@ namespace ExelReaderTests
                 decimal expectedResult = (Decimal)(absoluteFrequencies[numbers[i]] * 100) / numbers.Count;
                 Assert.AreEqual(Decimal.Round(expectedResult, 1, MidpointRounding.AwayFromZero), relativeFrequencies[numbers[i]]);
             }
+        }
+
+        [Test]
+        public void Given_EmptyList_Then_FrequencyCalculatorGetRelativeFrequency_Should_ReturnNoFrequency()
+        {
+            //Arrange
+            numbers = new List<int>() { };
+
+            //Act
+            relativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(numbers);
+
+            //Assert
+            Assert.AreEqual(0, absoluteFrequencies.Count);
         }
     }
 }

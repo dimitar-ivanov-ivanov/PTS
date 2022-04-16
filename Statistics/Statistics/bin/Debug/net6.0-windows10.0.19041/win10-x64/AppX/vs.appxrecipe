@@ -29,29 +29,29 @@
     <AppXManifest Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-10T16:42:01.936</Modified>
+      <Modified>2022-04-12T17:56:29.345</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-10T16:40:56.319</Modified>
+      <Modified>2022-04-12T17:56:27.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.runtimeconfig.json">
       <PackagePath>Statistics.runtimeconfig.json</PackagePath>
-      <Modified>2022-04-07T05:14:16.998</Modified>
+      <Modified>2022-04-12T17:56:26.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.dll">
       <PackagePath>Statistics.dll</PackagePath>
-      <Modified>2022-04-10T16:41:58.455</Modified>
+      <Modified>2022-04-12T17:56:17.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\apphost.exe">
       <PackagePath>Statistics.exe</PackagePath>
-      <Modified>2022-04-10T16:41:58.588</Modified>
+      <Modified>2022-04-12T17:56:18.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\bin\Debug\net6.0-windows10.0.19041\win10-x64\Statistics.deps.json">
       <PackagePath>Statistics.deps.json</PackagePath>
-      <Modified>2022-04-10T02:05:31.194</Modified>
+      <Modified>2022-04-12T17:56:26.346</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.2\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1091,179 +1091,179 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReader\bin\Debug\net6.0\ExelReader.dll">
       <PackagePath>ExelReader.dll</PackagePath>
-      <Modified>2022-04-10T15:58:13.432</Modified>
+      <Modified>2022-04-12T17:55:58.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\Platforms\Windows\App.xbf">
       <PackagePath>Platforms\Windows\App.xbf</PackagePath>
-      <Modified>2022-04-10T16:40:51.521</Modified>
+      <Modified>2022-04-12T17:56:17.117</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2022-04-07T05:11:17.066</Modified>
+      <Modified>2022-04-11T17:24:33.561</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-100.png">
       <PackagePath>appiconfgSplashScreen.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:09.907</Modified>
+      <Modified>2022-04-11T17:24:40.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-125.png">
       <PackagePath>appiconfgSplashScreen.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:09.945</Modified>
+      <Modified>2022-04-11T17:24:40.079</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-150.png">
       <PackagePath>appiconfgSplashScreen.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.026</Modified>
+      <Modified>2022-04-11T17:24:40.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-200.png">
       <PackagePath>appiconfgSplashScreen.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.181</Modified>
+      <Modified>2022-04-11T17:24:40.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-400.png">
       <PackagePath>appiconfgSplashScreen.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.477</Modified>
+      <Modified>2022-04-11T17:24:40.081</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2022-04-07T05:11:17.064</Modified>
+      <Modified>2022-04-11T17:24:40.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.450</Modified>
+      <Modified>2022-04-11T17:24:40.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.482</Modified>
+      <Modified>2022-04-11T17:24:40.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.510</Modified>
+      <Modified>2022-04-11T17:24:40.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.581</Modified>
+      <Modified>2022-04-11T17:24:40.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.788</Modified>
+      <Modified>2022-04-11T17:24:40.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.634</Modified>
+      <Modified>2022-04-11T17:24:40.057</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.650</Modified>
+      <Modified>2022-04-11T17:24:40.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.659</Modified>
+      <Modified>2022-04-11T17:24:40.058</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.668</Modified>
+      <Modified>2022-04-11T17:24:40.059</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.680</Modified>
+      <Modified>2022-04-11T17:24:40.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.855</Modified>
+      <Modified>2022-04-11T17:24:40.060</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.885</Modified>
+      <Modified>2022-04-11T17:24:40.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.969</Modified>
+      <Modified>2022-04-11T17:24:40.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.035</Modified>
+      <Modified>2022-04-11T17:24:40.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.115</Modified>
+      <Modified>2022-04-11T17:24:40.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.743</Modified>
+      <Modified>2022-04-11T17:24:40.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.752</Modified>
+      <Modified>2022-04-11T17:24:40.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.769</Modified>
+      <Modified>2022-04-11T17:24:40.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.801</Modified>
+      <Modified>2022-04-11T17:24:40.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.835</Modified>
+      <Modified>2022-04-11T17:24:40.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.688</Modified>
+      <Modified>2022-04-11T17:24:40.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.696</Modified>
+      <Modified>2022-04-11T17:24:40.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.704</Modified>
+      <Modified>2022-04-11T17:24:40.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.713</Modified>
+      <Modified>2022-04-11T17:24:40.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.725</Modified>
+      <Modified>2022-04-11T17:24:40.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.135</Modified>
+      <Modified>2022-04-11T17:24:40.069</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.182</Modified>
+      <Modified>2022-04-11T17:24:40.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.220</Modified>
+      <Modified>2022-04-11T17:24:40.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.285</Modified>
+      <Modified>2022-04-11T17:24:40.071</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.417</Modified>
+      <Modified>2022-04-11T17:24:40.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.703</Modified>
+      <Modified>2022-04-11T17:24:40.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.731</Modified>
+      <Modified>2022-04-11T17:24:40.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.776</Modified>
+      <Modified>2022-04-11T17:24:40.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2022-04-07T05:14:10.861</Modified>
+      <Modified>2022-04-11T17:24:40.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dimitar\Documents\programming\git\PTS\Statistics\Statistics\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2022-04-07T05:14:11.106</Modified>
+      <Modified>2022-04-11T17:24:40.077</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\6.0.200-preview.14.5099\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
