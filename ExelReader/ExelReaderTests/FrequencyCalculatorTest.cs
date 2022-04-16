@@ -1,4 +1,5 @@
 using ExelReader;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -10,12 +11,15 @@ namespace ExelReaderTests
         private List<int> numbers;
         private Dictionary<int, int> absoluteFrequencies;
         private Dictionary<int, decimal> relativeFrequencies;
+        private Mock<FrequencyCalculator> mockedCalcultor;
+
 
         [SetUp]
         public void Setup()
         {
             absoluteFrequencies = new Dictionary<int, int>();
             relativeFrequencies = new Dictionary<int, decimal>();
+            mockedCalcultor = new Mock<FrequencyCalculator>() { CallBase = true };
         }
 
         [Test]
@@ -25,7 +29,7 @@ namespace ExelReaderTests
             numbers = new List<int>() { 1, 2, 3 };
 
             //Act
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             for (int i = 0; i < numbers.Count; i++)
             {
@@ -41,7 +45,7 @@ namespace ExelReaderTests
             numbers = new List<int>() { 1, 2, 2, 3, 3, 3 };
 
             //Act
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             //Assert
             Assert.AreEqual(1, absoluteFrequencies[1]);
@@ -56,7 +60,7 @@ namespace ExelReaderTests
             numbers = new List<int>() { 1, 1, 1 };
 
             //Act
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             //Assert
             Assert.AreEqual(numbers.Count, absoluteFrequencies[1]);
@@ -69,7 +73,7 @@ namespace ExelReaderTests
             numbers = new List<int>() { };
 
             //Act
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             //Assert
             Assert.AreEqual(0, absoluteFrequencies.Count);
@@ -80,10 +84,16 @@ namespace ExelReaderTests
         {
             //Arrange
             numbers = new List<int>() { 1, 2, 3 };
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            mockedCalcultor.Setup(x => x.GetAbsoluteFrequencies(It.IsAny<List<int>>())).Returns(new Dictionary<int, int>()
+            {
+                { 1, 1 },
+                { 2, 1 },
+                { 3, 1 }
+            });
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             //Act
-            relativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(numbers);
+            relativeFrequencies = mockedCalcultor.Object.GetRelativeFrequencies(numbers);
 
             for (int i = 0; i < numbers.Count; i++)
             {
@@ -98,9 +108,13 @@ namespace ExelReaderTests
         {
             //Arrange
             numbers = new List<int>() { 1, 1, 1 };
+            mockedCalcultor.Setup(x => x.GetAbsoluteFrequencies(It.IsAny<List<int>>())).Returns(new Dictionary<int, int>()
+            {
+                { 1, 3 },
+            });
 
             //Act
-            relativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(numbers);
+            relativeFrequencies = mockedCalcultor.Object.GetRelativeFrequencies(numbers);
 
             //Assert
             Assert.AreEqual(100, relativeFrequencies[1]);
@@ -111,10 +125,16 @@ namespace ExelReaderTests
         {
             //Arrange
             numbers = new List<int>() { 1, 2, 2, 3, 3, 3 };
-            absoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(numbers);
+            mockedCalcultor.Setup(x => x.GetAbsoluteFrequencies(It.IsAny<List<int>>())).Returns(new Dictionary<int, int>()
+            {
+                { 1, 1 },
+                { 2, 2 },
+                { 3, 3 }
+            });
+            absoluteFrequencies = mockedCalcultor.Object.GetAbsoluteFrequencies(numbers);
 
             //Act
-            relativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(numbers);
+            relativeFrequencies = mockedCalcultor.Object.GetRelativeFrequencies(numbers);
 
             for (int i = 0; i < numbers.Count; i++)
             {
@@ -129,9 +149,10 @@ namespace ExelReaderTests
         {
             //Arrange
             numbers = new List<int>() { };
+            mockedCalcultor.Setup(x => x.GetAbsoluteFrequencies(It.IsAny<List<int>>())).Returns(new Dictionary<int, int>() { });
 
             //Act
-            relativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(numbers);
+            relativeFrequencies = mockedCalcultor.Object.GetRelativeFrequencies(numbers);
 
             //Assert
             Assert.AreEqual(0, absoluteFrequencies.Count);

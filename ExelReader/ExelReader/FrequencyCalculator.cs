@@ -2,7 +2,7 @@
 {
     public class FrequencyCalculator
     {
-        public static Dictionary<int, int> GetAbsoluteFrequencies(List<int> wikis)
+        public virtual Dictionary<int, int> GetAbsoluteFrequencies(List<int> wikis)
         {
             Dictionary<int, int> frequencies = new Dictionary<int, int>();
             wikis.ForEach(wiki => {
@@ -16,7 +16,7 @@
             return frequencies;
         }
 
-        public static Dictionary<int, decimal> GetRelativeFrequencies(List<int> wikis)
+        public virtual Dictionary<int, decimal> GetRelativeFrequencies(List<int> wikis)
         {
             Dictionary<int, int> absoluteFrequencies = GetAbsoluteFrequencies(wikis);
             Dictionary<int, decimal> relativeFrequencies = new Dictionary<int, decimal>();

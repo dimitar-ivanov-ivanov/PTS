@@ -313,3 +313,5 @@ C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\obj\De
 C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\obj\Debug\net6.0\ExelReaderTests.pdb
 C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\obj\Debug\net6.0\ExelReaderTests.genruntimeconfig.cache
 C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\obj\Debug\net6.0\ref\ExelReaderTests.dll
+C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\bin\Debug\net6.0\Castle.Core.dll
+C:\Users\dimitar\Documents\programming\git\PTS\ExelReader\ExelReaderTests\bin\Debug\net6.0\Moq.dll

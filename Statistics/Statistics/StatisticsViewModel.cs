@@ -48,12 +48,13 @@ namespace Statistics
 
             WikisCount = exelReader.updatedWikisPerId.Select(wiki => wiki.Value).ToList();
             FilesCount = exelReader.uploadedFilesPerId.Select(file => file.Value).ToList();
-            
-            AbsoluteFrequencies = FrequencyCalculator.GetAbsoluteFrequencies(WikisCount)
+          
+            FrequencyCalculator calculator = new FrequencyCalculator();
+            AbsoluteFrequencies = calculator.GetAbsoluteFrequencies(WikisCount)
                 .OrderBy(x=>x.Key)
                 .ToDictionary(x=>x.Key,x=> x.Value);
             
-            RelativeFrequencies = FrequencyCalculator.GetRelativeFrequencies(WikisCount)
+            RelativeFrequencies = calculator.GetRelativeFrequencies(WikisCount)
                 .Select(x =>
                 {
                     String percent = x.Value + "%";
