@@ -116,6 +116,10 @@ namespace ExelReader
         {
             foreach (Row currentRow in sheetData.Elements<Row>())
             {
+                if (!currentRow.HasChildren)
+                {
+                    continue;
+                }
                 Cell currentCell = currentRow.Elements<Cell>().ElementAt(3);
                 if (currentCell.DataType != null)
                 {

@@ -35,7 +35,7 @@
                 x:Name="LogsEditor"
                 Placeholder="Моля въведете път до файл с логове"
                 HeightRequest="{OnPlatform Android='50',iOS='50',Default='5'}" 
-                MaxLength="50"
+                MaxLength="90"
                 WidthRequest="400"
                 Background="#2B0B98"
                 HorizontalOptions="Center" />
@@ -44,7 +44,7 @@
                 x:Name="ResultsEditor"
                 Placeholder="Моля въведете път до файл с оценки"
                 HeightRequest="{OnPlatform Android='50',iOS='50',Default='5'}" 
-                MaxLength="50"
+                MaxLength="90"
                 WidthRequest="400"
                 Background="#2B0B98"
                 HorizontalOptions="Center" />
@@ -53,7 +53,7 @@
                 x:Name="StudentResultsEditor"
                 Placeholder="Моля въведете път до файл с оценки"
                 HeightRequest="{OnPlatform Android='50',iOS='50',Default='5'}" 
-                MaxLength="50"
+                MaxLength="90"
                 WidthRequest="400"
                 Background="#2B0B98"
                 HorizontalOptions="Center" />
