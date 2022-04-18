@@ -168,15 +168,19 @@ namespace ExelReader
         }
         public void GetUserId(List<string> itemToRead, List<int> userIds)
         {
+            int resultId;
             foreach (string line in itemToRead)
             {
                 int pFrom = line.IndexOf('\'') + 1;
                 string result = line.Substring(pFrom, line.Length - pFrom);
                 int pTo = result.IndexOf('\'');
                 result = result.Substring(0, pTo);
-                if (Int32.TryParse(result, out int resultId))
+                if (Int32.TryParse(result, out resultId))
                 {
-                    userIds.Add(resultId);
+                    if (resultId >= 0)
+                    {
+                        userIds.Add(resultId);
+                    }
                 }
             }
         }
