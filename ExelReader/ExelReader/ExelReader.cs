@@ -5,24 +5,23 @@ namespace ExelReader
 {
     public class ExelReader
     {
-        private List<SheetData> sheets { get; set; }
         private SharedStringTable table;
-        public List<string> updatedWikis { get; private set; }
-        public List<string> uploadedFiles { get; private set; }
-        public Dictionary<int, double> scores { get; private set; }
-
-        public Dictionary<int, int> updatedWikisPerId { get; set; }
-        public Dictionary<int, int> uploadedFilesPerId { get; set; }
+        private List<SheetData> Sheets { get; set; }
+        public List<string> UpdatedWikis { get; private set; }
+        public List<string> UploadedFiles { get; private set; }
+        public Dictionary<int, double> Scores { get; private set; }
+        public Dictionary<int, int> UpdatedWikisPerId { get; set; }
+        public Dictionary<int, int> UploadedFilesPerId { get; set; }
 
         public ExelReader()
         {
-            sheets = new List<SheetData>();
             table = new SharedStringTable();
-            updatedWikis = new List<string>();
-            uploadedFiles = new List<string>();
-            scores = new Dictionary<int, double>();
-            updatedWikisPerId = new Dictionary<int, int>();
-            uploadedFilesPerId = new Dictionary<int, int>();
+            Sheets = new List<SheetData>();
+            UpdatedWikis = new List<string>();
+            UploadedFiles = new List<string>();
+            Scores = new Dictionary<int, double>();
+            UpdatedWikisPerId = new Dictionary<int, int>();
+            UploadedFilesPerId = new Dictionary<int, int>();
         }
 
         private void ExtractSheetsData(string path)
@@ -36,7 +35,7 @@ namespace ExelReader
                 {
                     if (worksheetPart.Worksheet.Elements<SheetData>().First() != null)
                     {
-                        sheets.Add(worksheetPart.Worksheet.Elements<SheetData>().First());
+                        Sheets.Add(worksheetPart.Worksheet.Elements<SheetData>().First());
                     }
                 }
                 table = workbookPart.SharedStringTablePart.SharedStringTable;
@@ -46,11 +45,11 @@ namespace ExelReader
 
         public void ReadLogs(string path)
         {
-            sheets=new List<SheetData>();
-            updatedWikis = new List<string>();
-            uploadedFiles = new List<string>();
+            Sheets=new List<SheetData>();
+            UpdatedWikis = new List<string>();
+            UploadedFiles = new List<string>();
             ExtractSheetsData(path);
-            foreach (SheetData sheetData in sheets)
+            foreach (SheetData sheetData in Sheets)
             {
                 ExtractLogsSheetData(sheetData);
             }
@@ -58,10 +57,10 @@ namespace ExelReader
 
         public void ReadScores(string path)
         {
-            sheets = new List<SheetData>();
-            scores = new Dictionary<int, double>();
+            Sheets = new List<SheetData>();
+            Scores = new Dictionary<int, double>();
             ExtractSheetsData(path);
-            foreach (SheetData sheetData in sheets)
+            foreach (SheetData sheetData in Sheets)
             {
                 ExtractScoresSheetData(sheetData);
             }
@@ -84,11 +83,7 @@ namespace ExelReader
                             double scoreValue;
                             if (Double.TryParse(score.InnerText, out scoreValue))
                             {
-                                scores.Add(idValue, scoreValue);
-                            }
-                            else
-                            {
-                                //throw new Exception("Invalid user score"); <----- Тук дава грешка
+                                Scores.Add(idValue, scoreValue);
                             }
                         }
                         else
@@ -130,13 +125,13 @@ namespace ExelReader
                         {
                             Cell updatedWiki = currentRow.Elements<Cell>().ElementAt(4);
                             string content = ReadString(updatedWiki);
-                            updatedWikis.Add(content);
+                            UpdatedWikis.Add(content);
                         }
                         if (temp == "A file has been uploaded.")
                         {
                             Cell uploadedFile = currentRow.Elements<Cell>().ElementAt(4);
                             string content = ReadString(uploadedFile);
-                            uploadedFiles.Add(content);
+                            UploadedFiles.Add(content);
                         }
                     }
                     else
@@ -196,19 +191,19 @@ namespace ExelReader
 
         public void FillMissingUserIds()
         {
-            foreach (int userId in uploadedFilesPerId.Keys)
+            foreach (int userId in UploadedFilesPerId.Keys)
             {
-                if (!updatedWikisPerId.ContainsKey(userId))
+                if (!UpdatedWikisPerId.ContainsKey(userId))
                 {
-                    updatedWikisPerId.Add(userId, 0);
+                    UpdatedWikisPerId.Add(userId, 0);
                 }
             }
 
-            foreach (int userId in updatedWikisPerId.Keys)
+            foreach (int userId in UpdatedWikisPerId.Keys)
             {
-                if (!uploadedFilesPerId.ContainsKey(userId))
+                if (!UploadedFilesPerId.ContainsKey(userId))
                 {
-                    uploadedFilesPerId.Add(userId, 0);
+                    UploadedFilesPerId.Add(userId, 0);
                 }
             }
         }
